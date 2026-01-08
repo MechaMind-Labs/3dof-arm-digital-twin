@@ -37,11 +37,13 @@ class ArmController(Node):
         self.arm_pub.publish(arm_traj)
         
         # Publish to Gazebo (gripper_controller)
+        # Gripper expects 2 joints: joint_4 and joint_5
         gripper_traj = JointTrajectory()
-        gripper_traj.joint_names = ["joint_4"]
+        gripper_traj.joint_names = ["joint_4", "joint_5"]
         
         gripper_point = JointTrajectoryPoint()
-        gripper_point.positions = [msg.position[3]]
+        # Use same value for both gripper joints
+        gripper_point.positions = [msg.position[3], -msg.position[3]]
         gripper_traj.points.append(gripper_point)
         
         self.gripper_pub.publish(gripper_traj)
