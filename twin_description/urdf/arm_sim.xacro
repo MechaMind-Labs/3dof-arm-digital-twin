@@ -1,0 +1,194 @@
+<?xml version="1.0" ?>
+<robot name="twin" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <link name="world"/>
+
+    <link name="base_link">
+    <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="5.0"/>
+        <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+    </inertial>
+    <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="package://twin_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="red">
+            <color rgba="1.0 0.0 0.0 1.0"/>
+        </material>
+    </visual>
+    <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="package://twin_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+    </collision>
+    </link>
+
+    <joint name="virtual_joint" type="fixed">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="world"/>
+        <child link="base_link"/>
+    </joint>
+
+
+    <link name="link_one">
+    <inertial>
+        <origin xyz="0.0 0.0 -0.0" rpy="0.0 0.0 0.0"/>
+        <mass value="2.0"/>
+        <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+    </inertial>
+    <visual>
+        <origin xyz="0.0 0.0 -0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="package://twin_description/meshes/link_one.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="red">
+            <color rgba="1.0 0.0 0.0 1.0"/>
+        </material>
+    </visual>
+    <collision>
+        <origin xyz="0.0 0.0 -0.0" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="package://twin_description/meshes/link_one.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+    </collision>
+    </link>
+
+    <joint name="joint_1" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0.0"/>
+        <parent link="base_link"/>
+        <child link="link_one"/>
+        <axis xyz="0 0 1"/>
+        <limit effort="30.0" lower="-2.356" upper="2.356" velocity="10.0"/>
+    </joint>
+
+
+    <link name="link_two">
+    <inertial>
+        <origin xyz="0.0 0.0025 -0.1526" rpy="0.0 0.0 0.0"/>
+        <mass value="2.0"/>
+        <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+    </inertial>
+    <visual>
+        <origin xyz="0.0 0.0025 -0.1526" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="package://twin_description/meshes/link_two.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="red">
+            <color rgba="1.0 0.0 0.0 1.0"/>
+        </material>
+    </visual>
+    <collision>
+        <origin xyz="0.0 0.0025 -0.1526" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="package://twin_description/meshes/link_two.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+    </collision>
+    </link>
+
+    <joint name="joint_2" type="revolute">
+        <origin rpy="0 0 0" xyz="0.0 -0.0025 0.1526"/>
+        <parent link="link_one"/>
+        <child link="link_two"/>
+        <axis xyz="0 1 0"/>
+        <limit effort="30.0" lower="-2.356" upper="2.356" velocity="10.0"/>
+    </joint>
+
+
+    <link name="link_three">
+    <inertial>
+        <origin xyz="0.0 0.0175 -0.0964" rpy="0.0 0.0 0.0"/>
+        <mass value="2.0"/>
+        <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+    </inertial>
+    <visual>
+        <origin xyz="0.0 0.0185 -0.249" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="package://twin_description/meshes/link_three_sim.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="red">
+            <color rgba="1.0 0.0 0.0 1.0"/>
+        </material>
+    </visual>
+    <collision>
+        <origin xyz="0.0 0.0185 -0.249" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="package://twin_description/meshes/link_three_sim.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+    </collision>
+    </link>
+
+    <joint name="joint_3" type="revolute">
+        <origin rpy="0 0 0" xyz="0.0 -0.0175 0.0964"/>
+        <parent link="link_two"/>
+        <child link="link_three"/>
+        <axis xyz="0 1 0"/>
+        <limit effort="30.0" lower="-2.356" upper="2.356" velocity="10.0"/>
+    </joint>
+
+    <link name="right_gripper">
+    <inertial>
+        <origin xyz="-0.0 -0.008 -0.37" rpy="0.0 0.0 0.0"/>
+        <mass value="1.0"/>
+        <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+    </inertial>
+    <visual>
+        <origin xyz="-0.0 -0.008 -0.37" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="package://twin_description/meshes/right_gripper.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="red">
+            <color rgba="1.0 0.0 0.0 1.0"/>
+        </material>
+    </visual>
+    <collision>
+        <origin xyz="-0.0 -0.008 -0.37" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="package://twin_description/meshes/right_gripper.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+    </collision>
+    </link>
+
+    <joint name="joint_4" type="revolute">
+        <origin rpy="0 0 0" xyz="0.0 0.030 0.12"/>
+        <parent link="link_three"/>
+        <child link="right_gripper"/>
+        <axis xyz="1 0 0"/>
+        <limit effort="30.0" lower="-2.356" upper="0.13" velocity="10.0"/>
+    </joint>
+
+    <link name="left_gripper">
+    <inertial>
+        <origin xyz="-0.0 0.008 -0.37" rpy="0.0 0.0 0.0"/>
+        <mass value="1.0"/>
+        <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+    </inertial>
+    <visual>
+        <origin xyz="-0.0 0.008 -0.37" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="package://twin_description/meshes/left_gripper.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="red">
+            <color rgba="1.0 0.0 0.0 1.0"/>
+        </material>
+    </visual>
+    <collision>
+        <origin xyz="-0.0 0.008 -0.37" rpy="0.0 0.0 0.0"/>
+        <geometry>
+            <mesh filename="package://twin_description/meshes/left_gripper.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+    </collision>
+    </link>
+
+    <joint name="joint_5" type="revolute">
+        <origin rpy="0 0 0" xyz="0.0 0.007 0.12"/>
+        <parent link="link_three"/>
+        <child link="left_gripper"/>
+        <axis xyz="1 0 0"/>
+        <limit effort="30.0" lower="-0.13" upper="2.356" velocity="10.0"/>
+        <mimic joint="joint_4" multiplier="-1"/>
+    </joint>
+
+</robot>
