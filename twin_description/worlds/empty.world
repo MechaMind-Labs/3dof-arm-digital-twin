@@ -15,8 +15,6 @@
     </scene>
 
 
-
-
     <model name='green_box'>
       <static>false</static>
       <include>
@@ -132,6 +130,16 @@
       <pose>0 0 0 0 -0 0</pose>
       <self_collide>false</self_collide>
     </model>
+
+  
+  	<model name='Trash_01_001'>
+        <static>true</static>    
+        <include>
+            <uri>model://aws_robomaker_residential_Trash_01</uri>
+        </include>
+        <pose frame=''>-0.25 0.0 0.15 0 0 0</pose>
+	  </model>
+
 
     <light name='sun' type='directional'>
       <pose>0 0 10 0 -0 0</pose>
