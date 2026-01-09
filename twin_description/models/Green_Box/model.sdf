@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="Green_Box">
+    <self_collide>false</self_collide>
+    <link name="link">
+      <inertial>
+        <mass>1.0</mass>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://Green_Box/meshes/Green_Box.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <max_vel>0.1</max_vel>
+              <min_depth>0.001</min_depth>
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://Green_Box/meshes/Green_Box.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+	<material>
+	  <ambient>0.1 0.5 0.1 1.0</ambient> <!-- Soft green ambient color -->
+	  <diffuse>0.1 0.7 0.1 1.0</diffuse> <!-- Bright green diffuse color -->
+	  <specular>0.3 0.4 0.3 1.0</specular> <!-- Light greenish highlights -->
+	  <emissive>0.0 0.0 0.0 1.0</emissive> <!-- No emissive color -->
+	</material>
+      </visual>
+    </link>
+    <static>0</static>
+  </model>
+</sdf>
