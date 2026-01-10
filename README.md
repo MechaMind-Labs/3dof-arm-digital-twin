@@ -101,7 +101,7 @@ source install/setup.bash
    ```
    - `Tools` → `Board` → `Boards Manager` → Install "**esp32**"
 
-3. Open firmware: `~/arm_ws/src/firmware/esp32_potentiometer_reader/esp32_potentiometer_reader.ino`
+3. Open firmware: `~/twin_ws/src/twin_firmware/firmware/ESP32_Potentiometer_Reader_Arm.ino`
 
 4. Configure:
    - **Board:** ESP32 Dev Module
@@ -145,14 +145,14 @@ source ~/.bashrc
 
 Open **2 terminals:**
 
-**Terminal 1 - Serial Reader:**
-```bash
-ros2 launch twin_firmware firmware.launch.py
-```
-
-**Terminal 2 - Launch RViz:**
+**Terminal 1 - Launch RViz:**
 ```bash
 ros2 launch twin_description display.launch.py
+```
+
+**Terminal 2 - Serial Reader:**
+```bash
+ros2 launch twin_firmware firmware.launch.py
 ```
 
 🎉 Rotate your potentiometers and watch the robot move!
@@ -211,7 +211,7 @@ sudo usermod -aG dialout $USER
 ## 🙌 Credits
 
 Maintained by **[Curious-Utkarsh](https://github.com/Curious-Utkarsh)**  
-Inspired by real-world **edge-avoidance robotics** applications.
+Inspired by real-world **digital-twin robotics** applications.
 
 ---
 
