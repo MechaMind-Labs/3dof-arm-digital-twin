@@ -229,13 +229,7 @@ Found a bug? Have an idea?
 **Kumar Utkarsh** - MechaMind Labs  
 🔗 [LinkedIn](linkedin.com/in/kumar-utkarsh-124aab227) | [GitHub](https://github.com/Curious-Utkarsh)
 
-**Workshop Inquiries:** [LinkedIn](https://www.mechamindlabs.com/contact)
-
----
-
-## 📄 License
-
-MIT License - See [LICENSE](LICENSE) file
+**Workshop Inquiries:** [Website](https://www.mechamindlabs.com/contact)
 
 ---
 
