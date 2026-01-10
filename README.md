@@ -227,7 +227,7 @@ Found a bug? Have an idea?
 ## 📧 Contact
 
 **Kumar Utkarsh** - MechaMind Labs  
-🔗 [LinkedIn](linkedin.com/in/kumar-utkarsh-124aab227) | [GitHub](https://github.com/Curious-Utkarsh)
+🔗 [LinkedIn]([linkedin.com/in/kumar-utkarsh-124aab227](https://www.linkedin.com/in/kumar-utkarsh-124aab227/)) | [GitHub](https://github.com/Curious-Utkarsh)
 
 **Workshop Inquiries:** [Website](https://www.mechamindlabs.com/contact)
 
