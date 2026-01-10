@@ -208,6 +208,13 @@ sudo usermod -aG dialout $USER
 
 ---
 
+## 🙌 Credits
+
+Maintained by **[Curious-Utkarsh](https://github.com/Curious-Utkarsh)**  
+Inspired by real-world **edge-avoidance robotics** applications.
+
+---
+
 ## 🤝 Contributing
 
 Found a bug? Have an idea?
