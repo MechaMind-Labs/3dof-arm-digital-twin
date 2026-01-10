@@ -7,7 +7,7 @@ Learn the complete pipeline from **hardware → ROS 2 → simulation**.
 
 ## 🎥 Demo
 
-*[Demo video coming soon]*
+https://github.com/user-attachments/assets/577a7207-6b56-4fc4-a9bd-c0b9d5e58512
 
 ---
 
