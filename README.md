@@ -1,4 +1,4 @@
-# ROS2 3-DOF Robotic Arm Digital Twin
+# ROS2 3-DOF Robotic Arm Digital Twin 🦾
 
 Build a **real-time digital twin** of a robotic arm controlled by potentiometers!  
 Learn the complete pipeline from **hardware → ROS 2 → simulation**.
