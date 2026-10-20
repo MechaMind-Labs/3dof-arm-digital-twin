@@ -14,7 +14,7 @@ https://github.com/user-attachments/assets/3851c8f0-b216-4b1f-aba5-061d58934f2c
 >
 > **Watch:** [full masterclass](https://youtu.be/UF73iIe3LsY) · [hardware + simulation in sync (short)](https://www.youtube.com/shorts/pVwVlfxJDlI) · LinkedIn: [masterclass](https://www.linkedin.com/feed/update/urn:li:activity:7414541064608473088/) · [3D-printed parts](https://www.linkedin.com/feed/update/urn:li:activity:7414921389326962688/) · [final demo](https://www.linkedin.com/feed/update/urn:li:activity:7415249665199181824/) · [write-up](https://www.linkedin.com/feed/update/urn:li:activity:7416132905845899264/)
 >
-> **Related:** [SCARA conveyor cell](https://github.com/Curious-Utkarsh/ROS2_SCARA_WS) — a full sim-to-real arm with MoveIt 2 · [teach-and-repeat Arduino arm](https://github.com/Curious-Utkarsh/Robotic-Arm-Arduino) — the school project this idea started from
+> **Related:** [SCARA conveyor cell](https://github.com/Curious-Utkarsh/scara-pick-and-place) — a full sim-to-real arm with MoveIt 2 · [teach-and-repeat Arduino arm](https://github.com/Curious-Utkarsh/Robotic-Arm-Arduino) — the school project this idea started from
 
 ---
 
@@ -74,7 +74,7 @@ pip3 install pyserial
 
 ```bash
 cd ~
-git clone https://github.com/MechaMind-Labs/ROS2_3DOF_Robotic_Arm_Digital_Twin.git
+git clone https://github.com/MechaMind-Labs/3dof-arm-digital-twin.git
 ```
 
 ### Step 3: Setup Workspace
@@ -84,8 +84,8 @@ git clone https://github.com/MechaMind-Labs/ROS2_3DOF_Robotic_Arm_Digital_Twin.g
 mkdir -p ~/twin_ws/src
 
 # Move packages
-mv ~/ROS2_3DOF_Robotic_Arm_Digital_Twin/* ~/twin_ws/src/
-rm -rf ~/ROS2_3DOF_Robotic_Arm_Digital_Twin
+mv ~/3dof-arm-digital-twin/* ~/twin_ws/src/
+rm -rf ~/3dof-arm-digital-twin
 
 # Install dependencies
 cd ~/twin_ws
@@ -225,7 +225,7 @@ Inspired by real-world **digital-twin robotics** applications.
 ## 🤝 Contributing
 
 Found a bug? Have an idea?
-- 🐛 [Report Issues](https://github.com/MechaMind-Labs/ROS2_3DOF_Robotic_Arm_Digital_Twin/issues)
+- 🐛 [Report Issues](https://github.com/MechaMind-Labs/3dof-arm-digital-twin/issues)
 - ⭐ Star the repo if this helped you!
 - 🔀 Fork and submit Pull Requests
 
