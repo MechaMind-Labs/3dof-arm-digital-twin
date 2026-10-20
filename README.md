@@ -9,6 +9,13 @@ Learn the complete pipeline from **hardware → ROS 2 → simulation**.
 
 https://github.com/user-attachments/assets/3851c8f0-b216-4b1f-aba5-061d58934f2c
 
+
+> **At a glance:** a 3D-printed 3-DOF arm whose joint angles are read by potentiometers on an ESP32 (12-bit ADC), streamed to ROS 2 over serial, and mirrored live by a URDF twin in RViz and Gazebo — including a pick-and-place demo. Firmware, URDF, meshes and STEP files for printing are included.
+>
+> **Watch:** [full masterclass](https://youtu.be/UF73iIe3LsY) · [hardware + simulation in sync (short)](https://www.youtube.com/shorts/pVwVlfxJDlI)
+>
+> **Related:** [SCARA conveyor cell](https://github.com/Curious-Utkarsh/ROS2_SCARA_WS) — a full sim-to-real arm with MoveIt 2 · [teach-and-repeat Arduino arm](https://github.com/Curious-Utkarsh/Robotic-Arm-Arduino) — the school project this idea started from
+
 ---
 
 ## ✨ What You'll Build
