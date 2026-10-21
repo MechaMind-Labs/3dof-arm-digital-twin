@@ -14,6 +14,8 @@ https://github.com/user-attachments/assets/3851c8f0-b216-4b1f-aba5-061d58934f2c
 >
 > **Watch:** [full masterclass](https://youtu.be/UF73iIe3LsY) · [hardware + simulation in sync (short)](https://www.youtube.com/shorts/pVwVlfxJDlI) · LinkedIn: [masterclass](https://www.linkedin.com/feed/update/urn:li:activity:7414541064608473088/) · [3D-printed parts](https://www.linkedin.com/feed/update/urn:li:activity:7414921389326962688/) · [final demo](https://www.linkedin.com/feed/update/urn:li:activity:7415249665199181824/) · [write-up](https://www.linkedin.com/feed/update/urn:li:activity:7416132905845899264/)
 >
+> **Playlists:** [Robotics Projects](https://www.youtube.com/playlist?list=PLdMuvhY3uTKstk7-rEB08oEmaAYHoISt5) · [Workshops and Live Labs](https://www.youtube.com/playlist?list=PLdMuvhY3uTKtMOVVnfKRV4qswTEHeXTy2)
+>
 > **Related:** [SCARA conveyor cell](https://github.com/Curious-Utkarsh/scara-pick-and-place) — a full sim-to-real arm with MoveIt 2 · [teach-and-repeat Arduino arm](https://github.com/Curious-Utkarsh/Robotic-Arm-Arduino) — the school project this idea started from
 
 ---
