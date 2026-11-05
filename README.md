@@ -238,7 +238,7 @@ Found a bug? Have an idea?
 **Kumar Utkarsh** - MechaMind Labs  
 🔗 [LinkedIn](https://www.linkedin.com/in/kumar-utkarsh-124aab227/) | [GitHub](https://github.com/Curious-Utkarsh)
 
-**Workshop Inquiries:** [Website](https://www.mechamindlabs.com/contact)
+**Website:** [mechamindlabs.com](https://www.mechamindlabs.com/)
 
 ---
 
